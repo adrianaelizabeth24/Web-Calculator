@@ -24,7 +24,7 @@
         <div class="button number" id="9" onclick="clickNumber(this.id)">
             <div class="text">9</div>
         </div>
-        <div class="button operands" id="div">
+        <div class="button operands" id="/" onclick="clickOperand(this.id)">
             <div class="text">/</div>
         </div>
     </div>
@@ -38,7 +38,7 @@
         <div class="button" id="6" onclick="clickNumber(this.id)">
             <div class="text">6</div>
         </div>
-        <div class="button operands" id="x">
+        <div class="button operands" id="*" onclick="clickOperand(this.id)">
             <div class="text">*</div>
         </div>
     </div>
@@ -52,7 +52,7 @@
         <div class="button" id="3" onclick="clickNumber(this.id)">
             <div class="text">3</div>
         </div>
-        <div class="button operands" id="menos">
+        <div class="button operands" id="-" onclick="clickOperand(this.id)">
             <div class="text">-</div>
         </div>
     </div>
@@ -60,18 +60,18 @@
         <div class="buttonBig" id="0" onclick="clickNumber(this.id)">
             <div class="text">0</div>
         </div>
-        <div class="button operands" id="mas">
+        <div class="button operands" id="+" onclick="clickOperand(this.id)">
             <div class="text">+</div>
         </div>
     </div>
     <div class="row">
-        <div class="button operands" id="punto">
+        <div class="button operands" id="." onclick="clickOperand(this.id)">
             <div class="text">.</div>
         </div>
-        <div class="button operands">
+        <div class="button operands" onclick="clickCE()">
             <div class="text">C</div>
         </div>
-        <div class="button operands" id="bs">
+        <div class="button operands" onclick="clickBackSpace()">
             <div class="text"><--</div>
         </div>
         <div class="button operands" id="igual">
