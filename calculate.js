@@ -37,3 +37,18 @@ function clickBackSpace(){
         document.getElementById('screen').getElementsByTagName('div')[0].innerHTML = "0";
     }
 }
+
+function clickEquals(){
+    var acum = document.getElementById('screen').getElementsByTagName('div')[0].innerHTML;
+    var xhttp;
+    xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function() {
+        if (this.readyState == 4 && this.status == 200) {
+            document.getElementById('screen').getElementsByTagName('div')[0].innerHTML = this.responseText;
+        }
+    };
+    xhttp.open("GET", "solve.php?q="+acum, true);
+    xhttp.send();
+
+
+}
