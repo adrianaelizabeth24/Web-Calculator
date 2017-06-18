@@ -4,13 +4,19 @@
     <meta charset="UTF-8">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="calculate.js"></script>
 </head>
 <body>
 <div class="calculator">
+    <div class="row">
+        <div class="display2 expression sb" id="aritmeticExpression">
+            <div class="textDisplay2">0</div>
+        </div>
+    </div>
     <div class="row bB">
-        <div class="display operands" id="screen">
+        <div class="display operands sb" id="screen">
             <div class="textDisplay">0</div>
         </div>
     </div>
@@ -72,7 +78,7 @@
             <div class="text">C</div>
         </div>
         <div class="button operands" onclick="clickBackSpace()">
-            <div class="text"><--</div>
+            <div class="text"><i class="fa fa-arrow-left"></i></div>
         </div>
         <div class="button operands" onclick="clickEquals()">
             <div class="text">=</div>
