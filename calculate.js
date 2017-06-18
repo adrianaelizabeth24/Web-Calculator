@@ -18,9 +18,16 @@ function clickNumber(numberID){
 
 function clickOperand(operandID){
     var acum = document.getElementById('aritmeticExpression').getElementsByTagName('div')[0].innerHTML;
-    var subs = acum.concat(operandID);
-    document.getElementById('aritmeticExpression').getElementsByTagName('div')[0].innerHTML = subs;
-    acum = subs;
+    var temp = document.getElementById('screen').getElementsByTagName('div')[0].innerHTML;
+    if(temp == '0'){
+        var subs = acum.concat(operandID);
+        document.getElementById('aritmeticExpression').getElementsByTagName('div')[0].innerHTML = subs;
+    }
+    else{
+        var subs = temp.concat(operandID);
+        document.getElementById('aritmeticExpression').getElementsByTagName('div')[0].innerHTML = subs;
+        document.getElementById('screen').getElementsByTagName('div')[0].innerHTML = '0';
+    }
 }
 
 function clickCE(){
