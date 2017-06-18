@@ -20,6 +20,7 @@ body{
     width:100%;
 }
 
+/*all buttons except 0 button*/
 .button{
     height: 120px;
     width: 125px;
@@ -27,6 +28,7 @@ body{
     float: left;
 }
 
+/*0 button*/
 .buttonBig{
     height: 120px;
     width: 375px;
@@ -44,6 +46,7 @@ body{
     opacity: 0.4;
 }
 
+/*display that shows result*/
 .display{
     height: 120px;
     width: 500px;
@@ -52,6 +55,7 @@ body{
     text-align: right;
 }
 
+/*display that shows aritmetic expression*/
 .display2{
     height: 120px;
     width: 500px;
@@ -89,6 +93,7 @@ body{
     border-bottom: 2px solid #fff;
 }
 
+/* scroll bar for displays style*/
 .sb{
     overflow-x: auto;
 }
